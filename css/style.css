@@ -1,19 +1,63 @@
 html {
+  /* フォントの設定 */
   font-size: 18px;
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   line-height: 2rem;
+
+  /* 全体の文字色を指定 */
   color: #2d3d61;
+
+  /* ページ全体の背景色を指定 */
   background-color: #f2f2f2;
 }
 
+main {
+  /* 左右に余白を持たせる */
+  margin: 0 auto;
+  width: 80vw;
+}
+
+/* h1タグのスタイルを指定 */
+h1 {
+  /* 中央揃えにする */
+  text-align: center;
+
+  /* 文字色を変更 */
+  color: #153c97;
+}
+
+/* h2 タグのスタイルを指定 */
+h2 {
+  /* 中央揃えにする */
+  text-align: center;
+
+  /* 上に余白をもたせる */
+  margin-top: 50px;
+}
+
+/* 箇条書きのスタイルを指定 */
+li {
+  /* 箇条書きの点を非表示にする */
+  list-style: none;
+}
+
+/* 水平線のスタイルを指定 */
+hr {
+  background-color: #687490;
+  height: 1px;
+  border: none;
+}
+
+/* アイコン画像のサイズを指定 */
 .icon {
   width: 90%;
   max-width: 600px;
 }
 
+/* アイコンと自己紹介を横並びにする */
 .flex-container {
   display: flex;
   width: 100%;
@@ -23,48 +67,28 @@ html {
   justify-content: center;
 }
 
-main {
-  margin: 0 auto;
-  width: 80vw;
-}
-
-.x-center {
-  text-align: center;
-}
-
+/*名前の下の紹介文のスタイルを指定 */
 .lead {
-  font-size: 1.25rem;
-  margin-top: 0.25rem;
-}
+  /* 文字サイズを変更 */
+  font-size: 20px;
 
-.mb-2 {
-  margin-bottom: 0.25rem;
-}
+  /* 上部分の余白を設定 */
+  margin-top: 8px;
 
-.links {
-  margin-top: 1rem;
-}
-
-.link-item {
-  display: inline-block;
-  margin-right: 40px;
-}
-
-li {
-  list-style: none;
-}
-
-.svg {
-  color: aliceblue;
-}
-
-hr {
-  background-color: #687490;
-  height: 1px;
-  border: none;
-}
-
-h2 {
+  /* 中央揃えにする */
   text-align: center;
-  margin-top: 5rem;
+}
+
+/* リンク集全体の上部の余白を設定 */
+.links {
+  margin-top: 16px;
+}
+
+/* SNSアイコンのスタイルを指定 */
+.link-item {
+  /* 箇条書きを横並びにする */
+  display: inline-block;
+
+  /* 箇条書きの間隔を指定 */
+  margin-right: 40px;
 }
